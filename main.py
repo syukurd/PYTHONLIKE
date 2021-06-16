@@ -1,2 +1,3 @@
-import math
-print(math.cos(43))
+class Heroku :
+    def __init__(self) -> None:
+        pass
