@@ -19,3 +19,8 @@ print(table['Age']) #menampilkan isi dari age
 print(table.iloc[5]) #menampilkan isi dari baris
 print(table['Age'].iloc[1]) #menampilkan isi baris 1 dan column age
 print(table['Age'].iloc[5:10])#menampilkan isi baris 5-10 dan column age
+print(table.describe(include='all')) #menampilkan gambaran data keseluruhan ini strig masuk kedalam dan mnghasilkan banyak output Nan
+print(table.describe(exclude=['O'])) #menampilkan gambaran data keseluruhan dengan memfilter yang bernilai string
+
+#MELAKUKAN MISSING VALUES -> TRACE(RECORD ULANG DATA)
+print(table.isnull().values.any()) #menampilkan data yang datanya kosong(null/nan)
