@@ -24,3 +24,8 @@ print(table.describe(exclude=['O'])) #menampilkan gambaran data keseluruhan deng
 
 #MELAKUKAN MISSING VALUES -> TRACE(RECORD ULANG DATA)
 print(table.isnull().values.any()) #menampilkan data yang datanya kosong(null/nan)
+print(table.mean()) #melakukan rata-rata
+print(table.head(10)) #menampilkan sepuluh data yang ada nan atau null
+
+table = table.fillna(table.mean()) #mengisi data yang kosong dengan perhitungan rata2 dalam data
+print(table.head(10)) #menampilkan sepuluh data yang terisi dengan fillna
