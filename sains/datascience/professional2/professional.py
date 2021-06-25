@@ -37,7 +37,7 @@ print(list_menu)
 
 
 # tentang set => union, isdisjoint, issubset, issuperset, intersection, differencem symmetric_difference
-  # Fitur .union()
+  
   print(">>> Fitur .union()")
   parcel1 = {'Anggur','Apel','Jeruk'}
   parcel2 = {'Apel','Kiwi','Melon'}
@@ -89,3 +89,6 @@ print(list_menu)
   parcel_B = {'Apel','Jeruk','Semangka','Leci'}
   parcel_C = parcel_A.symmetric_difference(parcel_B)
   print(parcel_C)
+
+
+
