@@ -28,3 +28,15 @@ print(teks.find("malang"))
 print(">>> Fitur .count()")
 kemunculan_kata_apel = teks.count("apel")
 print(kemunculan_kata_apel)
+
+
+
+# Fitur .startswith()
+print(">>> Fitur .startswith()")
+teks = "Apel malang adalah apel termanis dibanding apel-apel lainnya"
+print(teks.startswith("Apel"))
+print(teks.startswith("apel"))
+# Fitur .endswith()
+print(">>> Fitur .endswith()")
+print(teks.endswith("lainnya"))
+print(teks.endswith("apel"))
