@@ -9,3 +9,15 @@ def rata_rata(data) :
     rata_rata = jumlah/len(data)
     return rata_rata
 print(rata_rata(data1))
+
+
+def deviasi_rata(data) :
+    rata_rata_devians = rata_rata(data)
+    varians = 0
+    for i in data :
+        varians += (i - rata_rata_devians) ** 2
+    varians /= len(data)    
+    deviasi = varians ** (1/2)
+    return deviasi
+
+print (deviasi_rata(data2))
