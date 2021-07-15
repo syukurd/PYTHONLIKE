@@ -19,3 +19,7 @@ print(dataset.head())
 
 monthly_amount = dataset.groupby('order_month')['gmv'].sum().reset_index()
 print(monthly_amount)
+
+import matplotlib.pyplot as plt
+plt.plot(monthly_amount['order_month'], monthly_amount['gmv'])
+plt.show()
