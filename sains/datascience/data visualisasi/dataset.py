@@ -1,3 +1,4 @@
+from numpy import pad
 import pandas as pd
 
 import datetime
@@ -28,7 +29,7 @@ plt.plot(monthly_amount['order_month'], monthly_amount['gmv'])
 
 plt.figure(figsize=(15,5))
 dataset.groupby(['order_month'])['gmv'].sum().plot()
-plt.title('Monthly GMV Year 2019')
+plt.title('Monthly GMV Year 2019', loc = 'center',pad = 20,fontsize=15,color='red')
 plt.xlabel('Order Month')
 plt.ylabel('Order Month')
 plt.show()
