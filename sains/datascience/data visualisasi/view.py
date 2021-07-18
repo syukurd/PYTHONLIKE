@@ -11,4 +11,7 @@ plt.title('Hello Dunia')
 plt.xlabel('Order_month', fontsize=12)
 plt.ylabel('Order_month', fontsize = 12) 
 plt.grid(color = 'darkgray',linewidth = 0.5,linestyle = ':' )
+labels,locations = plt.yticks()
+plt.yticks(labels,(labels/10000000000).astype(int))
+
 plt.show()
