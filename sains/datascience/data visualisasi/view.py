@@ -16,4 +16,9 @@ plt.yticks(labels,(labels/1000000000).astype(int))
 # netralkan batas maksimum dan minimum nilai axis ticks
 plt.ylim(ymin = 0)
 plt.text(0.45,0.72,'ini naik sedikit', color='red')
+
+# simpan dalam bentuk png
+plt.savefig('result.png')
+# mengetahui apa saja format yang di dukung
+plt.gcf().canvas.get_supported_filetypes()
 plt.show()
