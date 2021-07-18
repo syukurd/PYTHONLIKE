@@ -18,7 +18,18 @@ plt.ylim(ymin = 0)
 plt.text(0.45,0.72,'ini naik sedikit', color='red')
 
 # simpan dalam bentuk png
-plt.savefig('result.png')
+plt.savefig('result.png',quality = 95)
 # mengetahui apa saja format yang di dukung
+# berbagai parameter yang bisa diatur saat menyimpan gambar, antara lain:
+
+# dpi: Resolusi gambar (dots per inch). 
+# quality: Kualitas gambar (hanya berlaku jika formatnya jpg atau jpeg), bisa diisi nilai 1 (paling buruk) hingga 95 (paling bagus).
+# facecolor: Memberikan warna bagian depan figure, di luar area plot 
+# edgecolor: Memberikan warna pinggiran gambar
+# transparent: Jika nilainya True, maka gambarnya jadi transparan (jika filenya png)
+ 
+
 plt.gcf().canvas.get_supported_filetypes()
 plt.show()
+
+
