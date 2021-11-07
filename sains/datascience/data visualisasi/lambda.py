@@ -5,3 +5,6 @@ print(jumlah(4,4))
 
 kali = lambda x:x
 print(kali(2))
+
+
+print(4 + 4)
